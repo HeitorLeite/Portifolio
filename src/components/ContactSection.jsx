@@ -2,24 +2,44 @@ import { Mail, Phone, MapPin, Linkedin, Instagram, Send } from "lucide-react";
 import { cn } from "../lib/utils";
 import { useToast } from "../hooks/use-toast";
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
 
-    setTimeout(() => {
+    const formData = new FormData(e.target);
+
+    try {
+      await emailjs.send(
+        "service_s9zlcvi",
+        "template_ainmn0s",
+        {
+          from_name: formData.get("name"),
+          reply_to: formData.get("email"),
+          message: formData.get("message"),
+        },
+        "CmL_uBsAaYeMSxA7T"
+      );
+
       toast({
         title: "Mensagem enviada!",
         description:
           "Muito obrigado pela mensagem. Irei entrar em contato em breve!",
       });
+    } catch (error) {
+      console.error("Erro ao enviar e-mail:", error);
+      toast({
+        title: "Erro ao enviar!",
+        description: "Tente novamente em alguns minutos.",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">

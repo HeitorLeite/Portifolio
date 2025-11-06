@@ -25,7 +25,7 @@ export const AboutSection = () => {
                 Clique entre em contato
               </a>
               <a
-                href="#contact"
+                href="https://drive.google.com/u/0/uc?id=1sew7cCR1xywfe61zxtw8k2hLJWUIr4Jx&export=download"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
