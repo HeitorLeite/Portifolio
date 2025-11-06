@@ -7,7 +7,7 @@ const projects = [
     title: "Tradutor com API",
     description:
       "Este é um projeto pessoal que desenvolvi para aplicar os meus conhecimentos em TailwindCSS e Consumo de APIs com React.",
-    image: "/public/projects/Tradutor.png",
+    image: "/projects/Tradutor.png",
     tags: ["React", "Tailwind", "API Restful"],
     demoUrl: "https://tradutor-com-api.vercel.app/",
     github: "https://github.com/HeitorLeite/Tradutor-com-API",
@@ -17,7 +17,7 @@ const projects = [
     title: "Cadastro de Usuário",
     description:
       "Este é um projeto que eu fiz para entender mais sobre integração entre React, Node.js, Express e MongoDB para criação de servidor. É um cadastrador de usuários que coleta as informações digitadas e coloca em um banco de dados para exibir.",
-    image: "/public/projects/Cadastro de Usuário.png",
+    image: "/projects/CadastroUsuario.png",
     tags: ["React", "Tailwind", "Node.js", "Express", "API Restful", "MongoDB"],
     demoUrl: "https://cadastro-de-usuario-ten.vercel.app/",
     github: "https://github.com/HeitorLeite/Cadastro-de-Usuario",
@@ -27,7 +27,7 @@ const projects = [
     title: "Site Lili Festas",
     description:
       "Esse é o projeto de uma landing page que desenvolvi para uma doceira da região, focada em apresentar seu trabalho para os clientes.",
-    image: "/public/projects/LiliFestas.png",
+    image: "/projects/LiliFestas.png",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://lili-festas.vercel.app/",
     github: "https://github.com/HeitorLeite/Lili-Festas",
@@ -37,7 +37,7 @@ const projects = [
     title: "Site Guaratá",
     description:
       "Esse foi o primeiro projeto profissional que desenvolvi, foi para uma empresas local de carros por aplicativo chamada Guaratá, o foco dessa página é apresentar o aplicativo e a empresa para novos usuários.",
-    image: "/public/projects/Guarata.png",
+    image: "/projects/Guarata.png",
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "http://guarata.com.br/",
     github: "https://github.com/HeitorLeite/Site-Guarata",
